@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoAI: The Future of Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d00ff;
+            --dark-bg: #0a0a0a;
+            --text-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--neon-blue), 0 0 20px var(--neon-blue);
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--neon-purple), 0 0 40px var(--neon-purple);
+            }
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--neon-blue);
+        }
+
+        section {
+            margin: 4rem 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--neon-blue);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .ai-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 243, 255, 0.2);
+        }
+
+        .ai-card h3 {
+            color: var(--neon-purple);
+            margin-top: 0;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating-image {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="particles-js"></div>
+        <h1>NeoAI: The Future of Intelligence</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#innovations">Innovations</a>
+            <a href="#impact">Impact</a>
+            <a href="#future">Future</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About NeoAI</h2>
+            <p>Welcome to the cutting edge of artificial intelligence. NeoAI represents the pinnacle of human ingenuity, where the boundaries between human cognition and machine intelligence blur into a seamless tapestry of possibilities.</p>
+            <p>Our mission is to push the frontiers of AI technology, creating intelligent systems that not only mimic human thought but surpass it in ways we're only beginning to imagine.</p>
+        </section>
+
+        <section id="innovations">
+            <h2>AI Innovations</h2>
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <h3>Quantum Neural Networks</h3>
+                    <p>Harnessing the power of quantum computing to create neural networks with unprecedented learning capabilities.</p>
+                </div>
+                <div class="ai-card">
+                    <h3>Emotion AI</h3>
+                    <p>Advanced algorithms capable of not just recognizing but understanding and responding to human emotions.</p>
+                </div>
+                <div class="ai-card">
+                    <h3>Neuro-Symbolic AI</h3>
+                    <p>Combining symbolic reasoning with neural networks for more robust and explainable AI systems.</p>
+                </div>
+                <div class="ai-card">
+                    <h3>Autonomous Creativity</h3>
+                    <p>AI systems that can independently create art, music, and literature indistinguishable from human-made works.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact">
+            <h2>Societal Impact</h2>
+            <p>The rise of advanced AI is reshaping every aspect of our society. From healthcare to education, from governance to entertainment, AI is becoming an integral part of our daily lives.</p>
+            <p>We're committed to ensuring that this AI revolution benefits all of humanity, addressing ethical concerns and working towards a future where humans and AI coexist in harmony.</p>
+        </section>
+
+        <section id="future">
+            <h2>The Future is Now</h2>
+            <p>As we stand on the brink of a new era, the potential of AI seems limitless. Neural interfaces, sentient machines, and AI-augmented reality are no longer science fiction—they're the world we're building today.</p>
+            <p>Join us in shaping this exciting future. The next chapter of human evolution is being written in lines of code, and you can be part of this incredible journey.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Connect with NeoAI</h2>
+            <p>Ready to dive into the future? Reach out to us and become part of the AI revolution.</p>
+            <p>Email: <a href="mailto:saalihsakkeer0102@gmail.com" style="color: var(--neon-blue);">saalihsakkeer0102@gmail.com</a></p>
+            <p>Follow us on social media for the latest updates in AI technology and NeoAI innovations.</p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+            },
+            retina_detect: true
+        });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const sections = document.querySelectorAll('section');
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            }
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
